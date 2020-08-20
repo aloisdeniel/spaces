@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       builder: (context, child) => Spacing(
         dataBuilder: (context) {
           final mediaQuery = MediaQuery.of(context);
-          if (mediaQuery.size.width > 400) {
-            return SpacingData.generate(20);
+          if (mediaQuery.size.width > 500) {
+            return SpacingData.generate(30);
           }
           return SpacingData.generate(10);
         },
@@ -72,7 +72,7 @@ class ValuesTab extends StatelessWidget {
   Widget _box(BuildContext context, String title, double height) {
     final spacing = Spacing.of(context);
     return Padding(
-      padding: spacing.insets.all.big,
+      padding: spacing.insets.all.normal,
       child: Column(
         children: [
           Text(
@@ -115,11 +115,10 @@ class SpaceTab extends StatelessWidget {
   const SpaceTab();
 
   Widget _box(BuildContext context) {
-    final spacing = Spacing.of(context);
     return Container(
       color: Colors.blue,
-      width: spacing.spaces.big,
-      height: spacing.spaces.big,
+      width: 20.0,
+      height: 20.0,
     );
   }
 
@@ -157,11 +156,10 @@ class SpacedFlexTab extends StatelessWidget {
   const SpacedFlexTab();
 
   Widget _box(BuildContext context) {
-    final spacing = Spacing.of(context);
     return Container(
       color: Colors.green,
-      width: spacing.spaces.big,
-      height: spacing.spaces.big,
+      width: 20.0,
+      height: 20.0,
     );
   }
 

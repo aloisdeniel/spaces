@@ -1,3 +1,7 @@
+## [0.3.0] - 2020/08/20
+
+* Updated generated amount.
+
 ## [0.2.2] - 2020/08/20
 
 * Fixed sample in documentation
