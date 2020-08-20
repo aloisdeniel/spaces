@@ -1,6 +1,6 @@
 name: spaces
 description: Defining global spacing constants for building consistent and responsive apps.
-version: 0.2.0
+version: 0.2.1
 homepage: https://github.com/aloisdeniel/spaces
 
 environment:

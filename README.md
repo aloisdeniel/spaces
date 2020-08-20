@@ -1,4 +1,4 @@
-![logo](logo.png)
+![logo](https://github.com/aloisdeniel/spaces/raw/master/logo.png)
 
 # Spacing
 
