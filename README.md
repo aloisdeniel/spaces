@@ -67,6 +67,30 @@ return MaterialApp(
 )
 ```
 
+### Generate
+
+By calling the `Spacing.generate` constructor, a set of constants are automatically generate from a single spacing base value.
+
+```dart
+SpacingData.generate(10.0)
+```
+
+### From spaces
+
+If you want to define the various spacing values, you can use the 
+
+```dart
+SpacingData.fromSpaces(
+    extraSmall: 1.0,
+    small: 2.0,
+    semiSmall: 4.0,
+    normal: 8.0,
+    semiBig: 12.0,
+    big: 20.0,
+    extraBig: 100.0,
+)
+```
+
 ## Responsive spacing
 
 You can define the `dataBuilder` property of the `Spacing` constructor to generate a configuration from the given context.

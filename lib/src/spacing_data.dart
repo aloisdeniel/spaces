@@ -25,20 +25,35 @@ abstract class SpacingData with _$SpacingData {
   //  * extraBig: `normal * 5.2`
   factory SpacingData.generate(double normal) {
     return SpacingData.fromSpaces(
-      SizeSet(
-        extraSmall: normal * 0.2,
-        small: normal * 0.4,
-        semiSmall: normal * 0.6,
-        normal: normal,
-        semiBig: normal * 1.4,
-        big: normal * 2.6,
-        extraBig: normal * 5.2,
-      ),
+      extraSmall: normal * 0.2,
+      small: normal * 0.4,
+      semiSmall: normal * 0.6,
+      normal: normal,
+      semiBig: normal * 1.4,
+      big: normal * 2.6,
+      extraBig: normal * 5.2,
     );
   }
 
   /// Generates all [insets] from the given [spaces].
-  factory SpacingData.fromSpaces(SizeSet<double> spaces) {
+  factory SpacingData.fromSpaces({
+    @required double extraSmall,
+    @required double small,
+    @required double semiSmall,
+    @required double normal,
+    @required double semiBig,
+    @required double big,
+    @required double extraBig,
+  }) {
+    final spaces = SizeSet(
+      extraSmall: extraSmall,
+      small: small,
+      semiSmall: semiSmall,
+      normal: normal,
+      semiBig: semiBig,
+      big: big,
+      extraBig: extraBig,
+    );
     return SpacingData(
       spaces: spaces,
       insets: SpacingInsetsData.fromSpaces(spaces),

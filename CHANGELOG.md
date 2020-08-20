@@ -1,3 +1,7 @@
+## [0.4.0] - 2020/08/20
+
+* Updated `SpacingData.fromSpaces` constructor.
+
 ## [0.3.1] - 2020/08/20
 
 * Improved documentation with quickstart.
