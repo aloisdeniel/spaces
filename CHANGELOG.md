@@ -1,3 +1,7 @@
+## [0.3.1] - 2020/08/20
+
+* Improved documentation with quickstart.
+
 ## [0.3.0] - 2020/08/20
 
 * Updated generated amount.

@@ -2,7 +2,54 @@
 
 # Spaces
 
+<p>
+  <a href="https://pub.dartlang.org/packages/spaces"><img src="https://img.shields.io/pub/v/spaces.svg"></a>
+  <a href="https://www.buymeacoffee.com/aloisdeniel">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
+
 Defining global spacing constants for building consistent and responsive apps.
+
+## Install
+
+Add the dependency to your `pubspec.yaml` :
+
+```yaml
+dependencies:
+    spaces: <version>
+```
+
+## Quick start
+
+```dart
+return MaterialApp(
+    // Defining
+    builder: (context, child) => Spacing(
+        dataBuilder: (context) {
+          final mediaQuery = MediaQuery.of(context);
+          if (mediaQuery.size.width > 500) {
+            return SpacingData.generate(30);
+          }
+          return SpacingData.generate(10);
+        },
+        child: child,
+    ),
+    home:Builder(builder: (context) {
+        // Using
+        final spacing = Spacing.of(context);
+        return SpacedColumn.normal(
+            padding: spacing.insets.all.semiBig,
+            children: <Widget>[
+                Text('hello'),
+                Space.big(),
+                Text('world'),
+            ],
+        );
+      })
+    ),
+)
+```
 
 # Usage
 
