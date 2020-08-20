@@ -50,7 +50,7 @@ There are seven availables space constants : `extraSmall`, `small`, `semiSmall`,
 ```dart
 final spacing = Spacing.of(context);
 return SizedBox(
-    width: spacing.semiSmall,
+    width: spacing.spaces.semiSmall,
 );
 ```
 
