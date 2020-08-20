@@ -20,18 +20,18 @@ abstract class SpacingData with _$SpacingData {
   //  * extraSmall: `normal * 0.2`
   //  * small: `normal * 0.4`
   //  * semiSmall: `normal * 0.8`
-  //  * semiBig: `normal * 1.4`
-  //  * big: `normal * 2.6`
-  //  * extraBig: `normal * 5.2`
+  //  * semiBig: `normal * 1.5`
+  //  * big: `normal * 2.5`
+  //  * extraBig: `normal * 5.0`
   factory SpacingData.generate(double normal) {
     return SpacingData.fromSpaces(
       extraSmall: normal * 0.2,
       small: normal * 0.4,
       semiSmall: normal * 0.6,
       normal: normal,
-      semiBig: normal * 1.4,
-      big: normal * 2.6,
-      extraBig: normal * 5.2,
+      semiBig: normal * 1.5,
+      big: normal * 2.5,
+      extraBig: normal * 5.0,
     );
   }
 

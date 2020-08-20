@@ -69,7 +69,17 @@ return MaterialApp(
 
 ### Generate
 
-By calling the `Spacing.generate` constructor, a set of constants are automatically generate from a single spacing base value.
+By calling the `Spacing.generate` constructor, a set of constants are automatically generated from a single base value.
+
+The generated values are :
+
+* **extraSmall** : `value * 0.2`
+* **small** : `value * 0.4`
+* **semiSmall** : `value * 0.6`
+* **normal** : `value`
+* **semiBig** : `value * 1.5`
+* **big** : `value * 2.5`
+* **extraBig** : `value * 5.0`
 
 ```dart
 SpacingData.generate(10.0)
@@ -116,7 +126,7 @@ final spacing = Spacing.of(context);
 
 ### Size variants
 
-There are seven availables space constants : `extraSmall`, `small`, `semiSmall`, `normal`, `semiBig`, `big`, `extraBig`;
+There are seven availables spacing constants : `extraSmall`, `small`, `semiSmall`, `normal`, `semiBig`, `big`, `extraBig`;
 
 ```dart
 final spacing = Spacing.of(context);
@@ -143,7 +153,7 @@ return Padding(
 
 ### Space
 
-The `Space` widgets uses [gap](https://pub.dev/packages/gap) under the hood to define a space in a `Flex`, `Column`, `Row` or `Scrollable` (such as `ListView`).
+The `Space` widget uses [gap](https://pub.dev/packages/gap) under the hood to define a space in a `Flex`, `Column`, `Row` or `Scrollable` (such as `ListView`).
 
 ```dart
 return Column(
