@@ -1,6 +1,6 @@
 ![logo](https://github.com/aloisdeniel/spaces/raw/master/logo.png)
 
-# Spacing
+# Spaces
 
 Defining global spacing constants for building consistent and responsive apps.
 
