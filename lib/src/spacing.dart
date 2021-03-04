@@ -18,21 +18,19 @@ class Spacing extends StatelessWidget {
   ///
   /// The [dataBuilder] and [child] arguments must not be null.
   const Spacing({
-    Key key,
-    @required this.child,
-    @required this.dataBuilder,
-  })  : assert(dataBuilder != null),
-        assert(child != null),
-        super(key: key);
+    Key? key,
+    required this.child,
+    required this.dataBuilder,
+  }) : super(key: key);
 
   /// Applies the given [data] to [child].
   ///
   /// The [data] and [child] arguments must not be null.
   Spacing.fixed({
-    Key key,
-    @required this.child,
-    @required SpacingData data,
-  })  : assert(data != null),
+    Key? key,
+    required this.child,
+    required SpacingData data,
+  })   : assert(data != null),
         assert(child != null),
         dataBuilder = ((BuildContext context) => data),
         super(key: key);
@@ -84,7 +82,7 @@ class Spacing extends StatelessWidget {
       provider != null,
       'No Spacing in widget tree. Make sure that you declared a Spacing.',
     );
-    return provider?.data;
+    return provider!.data;
   }
 
   @override
@@ -125,9 +123,9 @@ extension SpaceSizeExtension on SpaceSize {
 class _SpacingDataProvider extends InheritedWidget {
   final SpacingData data;
   const _SpacingDataProvider({
-    Key key,
-    @required Widget child,
-    @required this.data,
+    Key? key,
+    required Widget child,
+    required this.data,
   }) : super(
           key: key,
           child: child,

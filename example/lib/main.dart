@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           }
           return SpacingData.generate(10);
         },
-        child: child,
+        child: child ?? SizedBox(),
       ),
       home: HomePage(),
     );
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,3 +1,7 @@
+## [0.5.0] - 2021/03/04
+
+* Migration to null-safety.
+
 ## [0.4.1] - 2020/08/20
 
 * Updated generated values.

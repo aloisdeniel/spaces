@@ -37,13 +37,13 @@ abstract class SpacingData with _$SpacingData {
 
   /// Generates all [insets] from the given [spaces].
   factory SpacingData.fromSpaces({
-    @required double extraSmall,
-    @required double small,
-    @required double semiSmall,
-    @required double normal,
-    @required double semiBig,
-    @required double big,
-    @required double extraBig,
+    required double extraSmall,
+    required double small,
+    required double semiSmall,
+    required double normal,
+    required double semiBig,
+    required double big,
+    required double extraBig,
   }) {
     final spaces = SizeSet(
       extraSmall: extraSmall,
@@ -62,8 +62,8 @@ abstract class SpacingData with _$SpacingData {
 
   /// A spacing configuration from the given [spaces] and [insets].
   const factory SpacingData({
-    @required SpacingInsetsData insets,
-    @required SizeSet<double> spaces,
+    required SpacingInsetsData insets,
+    required SizeSet<double> spaces,
   }) = _SpacingData;
 }
 
@@ -329,17 +329,17 @@ abstract class SpacingInsetsData with _$SpacingInsetsData {
   }
 
   const factory SpacingInsetsData({
-    @required SizeSet<EdgeInsets> all,
-    @required SizeSet<EdgeInsets> horizontal,
-    @required SizeSet<EdgeInsets> vertical,
-    @required SizeSet<EdgeInsets> onlyRight,
-    @required SizeSet<EdgeInsets> onlyTop,
-    @required SizeSet<EdgeInsets> onlyBottom,
-    @required SizeSet<EdgeInsets> onlyLeft,
-    @required SizeSet<EdgeInsets> exceptLeft,
-    @required SizeSet<EdgeInsets> exceptRight,
-    @required SizeSet<EdgeInsets> exceptTop,
-    @required SizeSet<EdgeInsets> exceptBottom,
+    required SizeSet<EdgeInsets> all,
+    required SizeSet<EdgeInsets> horizontal,
+    required SizeSet<EdgeInsets> vertical,
+    required SizeSet<EdgeInsets> onlyRight,
+    required SizeSet<EdgeInsets> onlyTop,
+    required SizeSet<EdgeInsets> onlyBottom,
+    required SizeSet<EdgeInsets> onlyLeft,
+    required SizeSet<EdgeInsets> exceptLeft,
+    required SizeSet<EdgeInsets> exceptRight,
+    required SizeSet<EdgeInsets> exceptTop,
+    required SizeSet<EdgeInsets> exceptBottom,
   }) = _SpacingInsetsData;
 }
 
@@ -348,13 +348,13 @@ abstract class SpacingInsetsData with _$SpacingInsetsData {
 abstract class SizeSet<T> with _$SizeSet<T> {
   /// The user is currently updating the login form.
   const factory SizeSet({
-    @required T extraSmall,
-    @required T small,
-    @required T semiSmall,
-    @required T normal,
-    @required T semiBig,
-    @required T big,
-    @required T extraBig,
+    required T extraSmall,
+    required T small,
+    required T semiSmall,
+    required T normal,
+    required T semiBig,
+    required T big,
+    required T extraBig,
   }) = _SizeSet;
 }
 

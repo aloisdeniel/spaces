@@ -1,21 +1,21 @@
 name: spaces
 description: Defining global spacing constants for building consistent and responsive apps.
-version: 0.4.1
+version: 0.5.0
 homepage: https://github.com/aloisdeniel/spaces
 
 environment:
-  sdk: ">=2.8.0 <3.0.0"
-  flutter: ">=1.17.0 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0 <3.0.0"
 
 dependencies:
-  gap: ^1.2.0
+  gap: ^2.0.0-nullsafety.1
   flutter:
     sdk: flutter
-  freezed_annotation: ^0.11.0
+  freezed_annotation: ^0.13.0-nullsafety.0
 
 dev_dependencies:
-  freezed: ^0.11.5
-  build_runner: ^1.10.1
+  freezed: ^0.14.0-nullsafety.0
+  build_runner: ^1.11.5
   flutter_test:
     sdk: flutter
 

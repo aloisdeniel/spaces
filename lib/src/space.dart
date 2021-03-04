@@ -27,7 +27,7 @@ class Space extends StatelessWidget {
   /// Must not be null and must be positive.
   ///
   /// If null, then [size] should be defined.
-  final double mainAxisExtent;
+  final double? mainAxisExtent;
 
   /// The amount of space this widget takes in the opposite direction of the
   /// parent.
@@ -39,10 +39,10 @@ class Space extends StatelessWidget {
   /// Must be positive or null. If it's null (the default) the cross axis extent
   /// will be the same as the constraints of the parent in the opposite
   /// direction.
-  final double crossAxisExtent;
+  final double? crossAxisExtent;
 
   /// The color used to fill the gap.
-  final Color color;
+  final Color? color;
 
   /// The amount of space from [Spacing] this widget takes in the direction of its parent.
   ///
@@ -53,7 +53,7 @@ class Space extends StatelessWidget {
   /// Must not be null and must be positive.
   ///
   /// If null, then [mainAxisExtent] should be defined.
-  final SpaceSize size;
+  final SpaceSize? size;
 
   /// Creates a widget that takes a fixed [mainAxisExtent] of space in the
   /// direction of its parent.
@@ -61,12 +61,13 @@ class Space extends StatelessWidget {
   /// The [mainAxisExtent] must not be null and must be positive.
   /// The [crossAxisExtent] must be either null or positive.
   const Space({
-    Key key,
-    @required this.mainAxisExtent,
+    Key? key,
+    required double mainAxisExtent,
     this.crossAxisExtent,
     this.color,
-  })  : size = null,
-        assert(mainAxisExtent != null && mainAxisExtent > 0),
+  })  : mainAxisExtent = mainAxisExtent,
+        size = null,
+        assert(mainAxisExtent > 0),
         super(key: key);
 
   /// Creates a widget that takes an `extraSmall` amount of space in the
@@ -183,7 +184,7 @@ class SliverSpace extends StatelessWidget {
   /// Must not be null and must be positive.
   ///
   /// If null, then [size] should be defined.
-  final double mainAxisExtent;
+  final double? mainAxisExtent;
 
   /// The amount of space this widget takes in the opposite direction of the
   /// parent.
@@ -191,17 +192,17 @@ class SliverSpace extends StatelessWidget {
   /// Must be positive or null. If it's null (the default) the cross axis extent
   /// will be the same as the constraints of the parent in the opposite
   /// direction.
-  final double crossAxisExtent;
+  final double? crossAxisExtent;
 
   /// The color used to fill the gap.
-  final Color color;
+  final Color? color;
 
   /// The amount of space from [Spacing] this widget takes in the direction of its parent.
   ///
   /// Must not be null and must be positive.
   ///
   /// If null, then [mainAxisExtent] should be defined.
-  final SpaceSize size;
+  final SpaceSize? size;
 
   /// Creates a widget that takes a fixed [mainAxisExtent] of space in the
   /// direction of its parent.
@@ -209,12 +210,13 @@ class SliverSpace extends StatelessWidget {
   /// The [mainAxisExtent] must not be null and must be positive.
   /// The [crossAxisExtent] must be either null or positive.
   const SliverSpace({
-    Key key,
-    @required this.mainAxisExtent,
+    Key? key,
+    required double mainAxisExtent,
     this.crossAxisExtent,
     this.color,
-  })  : size = null,
-        assert(mainAxisExtent != null && mainAxisExtent > 0),
+  })  : mainAxisExtent = mainAxisExtent,
+        size = null,
+        assert(mainAxisExtent > 0),
         super(key: key);
 
   /// Creates a widget that takes an `extraSmall` amount of space in the
