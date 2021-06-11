@@ -8,14 +8,14 @@ environment:
   flutter: ">=2.0.0 <3.0.0"
 
 dependencies:
-  gap: ^2.0.0-nullsafety.1
+  gap: ^2.0.0
   flutter:
     sdk: flutter
-  freezed_annotation: ^0.13.0-nullsafety.0
+  freezed_annotation: ^0.14.2
 
 dev_dependencies:
-  freezed: ^0.14.0-nullsafety.0
-  build_runner: ^1.11.5
+  freezed: ^0.14.2
+  build_runner: ^2.0.4
   flutter_test:
     sdk: flutter
 
