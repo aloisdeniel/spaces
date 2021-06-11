@@ -63,8 +63,14 @@ class _$SpacingDataCopyWithImpl<$Res> implements $SpacingDataCopyWith<$Res> {
     Object? spaces = freezed,
   }) {
     return _then(_value.copyWith(
-      insets: insets == freezed ? _value.insets : insets as SpacingInsetsData,
-      spaces: spaces == freezed ? _value.spaces : spaces as SizeSet<double>,
+      insets: insets == freezed
+          ? _value.insets
+          : insets // ignore: cast_nullable_to_non_nullable
+              as SpacingInsetsData,
+      spaces: spaces == freezed
+          ? _value.spaces
+          : spaces // ignore: cast_nullable_to_non_nullable
+              as SizeSet<double>,
     ));
   }
 
@@ -114,13 +120,20 @@ class __$SpacingDataCopyWithImpl<$Res> extends _$SpacingDataCopyWithImpl<$Res>
     Object? spaces = freezed,
   }) {
     return _then(_SpacingData(
-      insets: insets == freezed ? _value.insets : insets as SpacingInsetsData,
-      spaces: spaces == freezed ? _value.spaces : spaces as SizeSet<double>,
+      insets: insets == freezed
+          ? _value.insets
+          : insets // ignore: cast_nullable_to_non_nullable
+              as SpacingInsetsData,
+      spaces: spaces == freezed
+          ? _value.spaces
+          : spaces // ignore: cast_nullable_to_non_nullable
+              as SizeSet<double>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SpacingData implements _SpacingData {
   const _$_SpacingData({required this.insets, required this.spaces});
 
@@ -280,36 +293,50 @@ class _$SpacingInsetsDataCopyWithImpl<$Res>
     Object? exceptBottom = freezed,
   }) {
     return _then(_value.copyWith(
-      all: all == freezed ? _value.all : all as SizeSet<EdgeInsets>,
+      all: all == freezed
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       horizontal: horizontal == freezed
           ? _value.horizontal
-          : horizontal as SizeSet<EdgeInsets>,
+          : horizontal // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       vertical: vertical == freezed
           ? _value.vertical
-          : vertical as SizeSet<EdgeInsets>,
+          : vertical // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyRight: onlyRight == freezed
           ? _value.onlyRight
-          : onlyRight as SizeSet<EdgeInsets>,
-      onlyTop:
-          onlyTop == freezed ? _value.onlyTop : onlyTop as SizeSet<EdgeInsets>,
+          : onlyRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyTop: onlyTop == freezed
+          ? _value.onlyTop
+          : onlyTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyBottom: onlyBottom == freezed
           ? _value.onlyBottom
-          : onlyBottom as SizeSet<EdgeInsets>,
+          : onlyBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyLeft: onlyLeft == freezed
           ? _value.onlyLeft
-          : onlyLeft as SizeSet<EdgeInsets>,
+          : onlyLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptLeft: exceptLeft == freezed
           ? _value.exceptLeft
-          : exceptLeft as SizeSet<EdgeInsets>,
+          : exceptLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptRight: exceptRight == freezed
           ? _value.exceptRight
-          : exceptRight as SizeSet<EdgeInsets>,
+          : exceptRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptTop: exceptTop == freezed
           ? _value.exceptTop
-          : exceptTop as SizeSet<EdgeInsets>,
+          : exceptTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptBottom: exceptBottom == freezed
           ? _value.exceptBottom
-          : exceptBottom as SizeSet<EdgeInsets>,
+          : exceptBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
     ));
   }
 
@@ -461,41 +488,56 @@ class __$SpacingInsetsDataCopyWithImpl<$Res>
     Object? exceptBottom = freezed,
   }) {
     return _then(_SpacingInsetsData(
-      all: all == freezed ? _value.all : all as SizeSet<EdgeInsets>,
+      all: all == freezed
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       horizontal: horizontal == freezed
           ? _value.horizontal
-          : horizontal as SizeSet<EdgeInsets>,
+          : horizontal // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       vertical: vertical == freezed
           ? _value.vertical
-          : vertical as SizeSet<EdgeInsets>,
+          : vertical // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyRight: onlyRight == freezed
           ? _value.onlyRight
-          : onlyRight as SizeSet<EdgeInsets>,
-      onlyTop:
-          onlyTop == freezed ? _value.onlyTop : onlyTop as SizeSet<EdgeInsets>,
+          : onlyRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyTop: onlyTop == freezed
+          ? _value.onlyTop
+          : onlyTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyBottom: onlyBottom == freezed
           ? _value.onlyBottom
-          : onlyBottom as SizeSet<EdgeInsets>,
+          : onlyBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       onlyLeft: onlyLeft == freezed
           ? _value.onlyLeft
-          : onlyLeft as SizeSet<EdgeInsets>,
+          : onlyLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptLeft: exceptLeft == freezed
           ? _value.exceptLeft
-          : exceptLeft as SizeSet<EdgeInsets>,
+          : exceptLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptRight: exceptRight == freezed
           ? _value.exceptRight
-          : exceptRight as SizeSet<EdgeInsets>,
+          : exceptRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptTop: exceptTop == freezed
           ? _value.exceptTop
-          : exceptTop as SizeSet<EdgeInsets>,
+          : exceptTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
       exceptBottom: exceptBottom == freezed
           ? _value.exceptBottom
-          : exceptBottom as SizeSet<EdgeInsets>,
+          : exceptBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SpacingInsetsData implements _SpacingInsetsData {
   const _$_SpacingInsetsData(
       {required this.all,
@@ -714,13 +756,34 @@ class _$SizeSetCopyWithImpl<T, $Res> implements $SizeSetCopyWith<T, $Res> {
     Object? extraBig = freezed,
   }) {
     return _then(_value.copyWith(
-      extraSmall: extraSmall == freezed ? _value.extraSmall : extraSmall as T,
-      small: small == freezed ? _value.small : small as T,
-      semiSmall: semiSmall == freezed ? _value.semiSmall : semiSmall as T,
-      normal: normal == freezed ? _value.normal : normal as T,
-      semiBig: semiBig == freezed ? _value.semiBig : semiBig as T,
-      big: big == freezed ? _value.big : big as T,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as T,
+      extraSmall: extraSmall == freezed
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      small: small == freezed
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiSmall: semiSmall == freezed
+          ? _value.semiSmall
+          : semiSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      normal: normal == freezed
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiBig: semiBig == freezed
+          ? _value.semiBig
+          : semiBig // ignore: cast_nullable_to_non_nullable
+              as T,
+      big: big == freezed
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as T,
+      extraBig: extraBig == freezed
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as T,
     ));
   }
 }
@@ -761,18 +824,40 @@ class __$SizeSetCopyWithImpl<T, $Res> extends _$SizeSetCopyWithImpl<T, $Res>
     Object? extraBig = freezed,
   }) {
     return _then(_SizeSet<T>(
-      extraSmall: extraSmall == freezed ? _value.extraSmall : extraSmall as T,
-      small: small == freezed ? _value.small : small as T,
-      semiSmall: semiSmall == freezed ? _value.semiSmall : semiSmall as T,
-      normal: normal == freezed ? _value.normal : normal as T,
-      semiBig: semiBig == freezed ? _value.semiBig : semiBig as T,
-      big: big == freezed ? _value.big : big as T,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as T,
+      extraSmall: extraSmall == freezed
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      small: small == freezed
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiSmall: semiSmall == freezed
+          ? _value.semiSmall
+          : semiSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      normal: normal == freezed
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiBig: semiBig == freezed
+          ? _value.semiBig
+          : semiBig // ignore: cast_nullable_to_non_nullable
+              as T,
+      big: big == freezed
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as T,
+      extraBig: extraBig == freezed
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as T,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SizeSet<T> implements _SizeSet<T> {
   const _$_SizeSet(
       {required this.extraSmall,
